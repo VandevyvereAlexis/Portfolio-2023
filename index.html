@@ -23,17 +23,20 @@
 
     <body>
 
-        <!-- Navbar 
+        <!-- Header 
         ======================================-->
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top ">
+
+            <!-- Navbar 
+            ======================================-->
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
 
                     <a class="navbar-brand" href="#">
                         <img src="./images/logo-vdva.png" alt="Logo Vdva" title="Logo Vdva">
                     </a>
 
-                    <a href="#">
+                    <a href="./cv/cv.pdf">
                         <i class="fa-solid fa-cloud-arrow-down"><span>cv</span></i>
                     </a>
 
@@ -43,8 +46,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link realisations" href="#">Réalisations</a>
-                            <a class="nav-link liste" href="#">Compétences</a>
+                            <a class="nav-link realisations" href="#realisations">Réalisations</a>
+                            <a class="nav-link liste" href="#competences">Compétences</a>
                             <a class="nav-link liste" href="#">Technologies</a>
                             <a class="nav-link liste" href="#">Profil</a>
                             <a class="nav-link liste" href="#">Contact</a>
@@ -53,39 +56,149 @@
 
                 </div>
             </nav> 
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 home-title">
+                        <h1>Bonjour, je suis Alexis</h1>
+                        <h2>Développeur Web</h2>
+                        <a href="./cv/cv.pdf" class="btn btn-full" target="_blank">Télécharger mon cv</a><br>
+                        <a href="#" class="btn btn-full collab" id="">Collaborons</a><br>
+                    </div>
+                    <div class="col-md-12 logo">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i><br>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </header>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        <!-- Main 
+        ======================================-->
         <main>
+
+            <!-- Realisations 
+            ======================================-->
+            <section id="realisations">
+                <div class="container">
+                    <div class="row"> 
+
+                        <div class="col-md-12 realisation">
+                            <h2>Mes réalisations</h2>
+                        </div>
+                        <div class="col-md-4 realisations">
+                            <a href="https://vandevyverealexis.github.io/Navbar/">
+                                <img src="./images/navbar.png" alt="Navbar">
+                            </a>
+                        </div>
+                        <div class="col-md-4 realisations">
+                            <a href="https://vandevyverealexis.github.io/Carte-de-visite-/">
+                                <img src="./images/carte-de-visite.png" alt="Carte de visite">
+                            </a>
+                        </div>
+                        <div class="col-md-4 realisations">
+                            <a href="https://vandevyverealexis.github.io/Portfolio/">
+                                <img src="./images/portfolio-flexbox.png" alt="Portfolio flexbox">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 realisations">
+                            <a href="#">
+                                <img src="./images/kome-waza.png" alt="Kome waza">
+                            </a>
+                        </div>
+                        <div class="col-md-4 realisations">
+                            <a href="https://vandevyverealexis.github.io/Site-du-the/">
+                                <img src="./images/site-du-the.png" alt="Site du the">
+                            </a>
+                        </div>
+                        <div class="col-md-4 realisations">
+                            <a href="#">
+                                <img src="./images/portfolio-bootstrap.png" alt="Portfolio Bootstrap">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Compétences 
+            ======================================-->
+            <section id="competences">
+                <div class="container text-center">
+                    <h2 class="mx-auto">Mes compétences</h2>
+                    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+
+                        <div class="col-md-3 competence">
+                            <img src="./images/autonomie.png" alt="Autonomie">
+                            <p>Autonomie</p>
+                        </div>
+                        <div class="col-md-3 competence">
+                            <img src="./images/developpeur-web.png" alt="Développeur web & web mobile">
+                            <p>Développeur web & web mobile</p>
+                        </div>
+                        <div class="col-md-3 competence">
+                            <img src="./images/travail-equipe.png" alt="Travail en équipe">
+                            <p>Travail en équipe</p>
+                        </div>
+                        <div class="col-md-3 competence">
+                            <img src="./images/besoins-clients.png" alt="Définission besoin client">
+                            <p>Définission besoin client</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<main>
             <section class="yoyo">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h2>Bonjour</h2>
+                        <div class="col-md-6">
+                            <h2>Bonjour, je suis Alexis</h2>
+                            <h3>Développeur Web</h3>
+                            <a href="#" class="btn btn-full">Nos produits</a>
+                            <a href="#" class="btn btn-full">Nos produits</a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <img src="./images/memoji.png" alt="" class="image">
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Bonjour</h2>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
+        </main>-->
         
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis libero excepturi laudantium nulla quos voluptates officiis ipsam ab consectetur ratione quia sint similique aspernatur veniam delectus, eaque nemo quam!</p>
         <br><br><br><br><br><br><br><br>
