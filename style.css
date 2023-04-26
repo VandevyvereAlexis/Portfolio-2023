@@ -235,11 +235,12 @@ header {
 }
 
 .competence img {
-    width: 100%;
+    width: 100px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    borde
 }
 
 .competence p {
@@ -251,16 +252,76 @@ header {
 }
 
 
+/* Technologies
+======================================*/
+#technologies h2 {
+    text-align: center;
+    margin: 40px 30px;
+    color: azure;
+}
+
+#technologies h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(137, 137, 252);
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#technologies i {
+    font-size: 30px;
+    color: azure;
+}
+
+#technologies p {
+    color: rgb(137, 137, 252);
+}
+
+#technologies .tech {
+    padding-bottom: 30px;
+}
 
 
+/* Profil
+======================================*/
+#profil h2 {
+    text-align: center;
+    margin: 40px 30px;
+    color: azure;
+}
 
+#profil h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(137, 137, 252);
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
+#profil p {
+    color: azure;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 1px azure;
+    padding: 30px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
 
+#profil p:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
-
-
-
-
+#profil img {
+    width: 200px;
+    padding-bottom: 20px;
+    background-color:  rgba(137, 137, 252, 0.395);
+    border-radius: 200px;
+}
 
 
 
