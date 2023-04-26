@@ -84,6 +84,7 @@ header {
     margin-left: 10px;
     color: rgb(140, 140, 247);
     transition: 0.5s;
+    animation: apparition 0.7s ease-in-out;
 }
 
 .logo a:hover {
@@ -192,6 +193,7 @@ header {
     border: 1px solid rgb(140, 140, 247);
     transition: 0.5s;
     margin-top: 10px;
+    animation: apparition 0.7s ease-in-out;
 }
 
 .realisations img:hover {
@@ -222,6 +224,7 @@ header {
     text-align: center;
     margin: 40px 30px;
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #competences h2:after {
@@ -238,6 +241,7 @@ header {
     border-radius: 30px;
     box-shadow: 1px 1px 1px azure;
     margin-top: 20px;
+    animation: apparition 0.7s ease-in-out;
 }
 
 .competence img {
@@ -246,6 +250,7 @@ header {
     background-position: top center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    animation: apparition 0.7s ease-in-out;
 }
 
 .competence p {
@@ -253,6 +258,7 @@ header {
     padding-top: 10px;
     letter-spacing: 2px;
     font-weight: 700;
+    animation: apparition 0.7s ease-in-out;
 }
 
 
@@ -262,6 +268,7 @@ header {
     text-align: center;
     margin: 40px 30px;
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #technologies h2:after {
@@ -277,11 +284,13 @@ header {
 #technologies i {
     font-size: 30px;
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #technologies p {
     color: rgb(137, 137, 252);
     font-size: 10px;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #technologies .tech {
@@ -295,6 +304,7 @@ header {
     text-align: center;
     margin: 40px 30px;
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #profil h2:after {
@@ -314,6 +324,7 @@ header {
     padding: 30px 30px;
     border-radius: 30px;
     transition: 0.5s;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #profil p:hover {
@@ -324,6 +335,7 @@ header {
 #profil img {
     width: 200px;
     padding-bottom: 20px;
+    animation: apparition 0.7s ease-in-out;
 }
 
 
@@ -333,6 +345,7 @@ header {
     text-align: center;
     margin: 40px 30px;
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #contact h2:after {
@@ -347,11 +360,13 @@ header {
 
 #contact i {
     color: azure;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #contact p {
     color: azure;
     transition: 0.5s;
+    animation: apparition 0.7s ease-in-out;
 }
 
 #contact p:hover {
@@ -367,6 +382,7 @@ header {
     color: azure;
     font-size: 10px;
     font-weight: 100;
+    animation: apparition 0.7s ease-in-out;
 }
 
 
