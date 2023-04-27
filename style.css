@@ -265,7 +265,6 @@ header {
 /* Technologies
 ======================================*/
 #technologies h2 {
-    text-align: center;
     margin: 40px 30px;
     color: azure;
     animation: apparition 0.7s ease-in-out;
