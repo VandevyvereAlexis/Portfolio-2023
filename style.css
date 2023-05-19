@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(#37393f, #1a1616);
 }
 
@@ -22,7 +22,7 @@ section {
 /* Header
 ======================================*/
 header {
-    background-image: linear-gradient(rgba(125, 125, 125, 0.163), rgba(125, 125, 125, 0.624)), url(./images/image-fond.jpg);
+    background-image: url(./images/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover; 
@@ -94,24 +94,26 @@ header {
 
 /* Navbar
 ======================================*/
-.fixed-top {                            /* navbar */
+#navbar {                          
     animation: apparition 0.8s ease-in-out;
 }
 
-.navbar-brand img {                     /* logo vdva */
+/* Navbar */
+#navbar img {                   
     width: 65px;
     border-radius: 100px;
-    margin-left: 20px;
 }
 
-.fa-cloud-arrow-down {                  /* logo cv */
+/* Logo cv */
+#logo-cv {                 
     margin-left: 20px;
     font-size: 18px;
     color: rgb(140, 140, 247);
     transition: 0.5s;
 }
 
-.fa-cloud-arrow-down span {             /* logo span cv */
+/* logo cv span */
+#logo-cv span {             
     position: relative;
     font-family: 'Prompt', sans-serif;
     top: 8px;
@@ -120,21 +122,24 @@ header {
     font-weight: 600;
 }
 
-.fa-cloud-arrow-down:hover {            /* logo cv:hover */
+/* Logo cv hover */
+#logo-cv:hover {            
     transform: scale(1.2);
     transition: 0.5s;
     color: azure;
 }
 
-.navbar-collapse {                      /* liste */
-    justify-content: end;
+/* Liens navbar */
+#navbarNavAltMarkup {                      
     font-weight: 300;
     letter-spacing: 2px;
     font-size: 16px;
+        gap: 50px;
 }
 
+
 .navbar-nav {                           /* liste */
-    gap: 50px;
+
     border-radius: 20px;
     transition: 0.3s;
 }
