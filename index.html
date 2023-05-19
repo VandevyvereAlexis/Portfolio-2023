@@ -10,8 +10,8 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-        <!-- Font Prompt-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Font Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Css Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -27,56 +27,67 @@
         ======================================-->
         <header>
 
-            <!-- Navbar 
-            ======================================-->
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="#home-title">
+                    <!-- Logo -->
+                    <a class="navbar-brand ms-4" href="#bloc-presentation">
                         <img src="./images/logo-vdva.png" alt="Logo Vdva" title="Logo Vdva">
                     </a>
 
-                    <a href="./cv/cv.pdf">
-                        <i class="fa-solid fa-cloud-arrow-down"><span>cv</span></i>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Menu burger -->
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link realisations" href="#realisations">Réalisations</a>
-                            <a class="nav-link liste" href="#competences">Compétences</a>
-                            <a class="nav-link liste" href="#technologies">Technologies</a>
-                            <a class="nav-link liste" href="#profil">Profil</a>
-                            <a class="nav-link liste" href="#contact">Contact</a>
-                        </div>
+                    <!-- Liens -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav" id="liens-navbar">
+                            <!-- Logo -->
+                            <a href="./cv/cv.pdf">
+                                <i class="fa-solid fa-cloud-arrow-down position-relative me-3 text-light" id="logo-cv"><span>cv</span></i>
+                            </a>
+                            <!-- Lien réalisations -->
+                            <a class="nav-link lsite position-relative me-4" href="#realisations" id="lien-realisations"> <span></span>/ /<span class="ms-3">Réalisations</span></a>
+                            <!-- Lien compétences -->
+                            <a class="nav-link liste position-relative me-4" href="#competences">/ /<span class="ms-3">Compétences</span></a>
+                            <!-- Lien Technologies -->
+                            <a class="nav-link liste position-relative me-4" href="#technologies">/ /<span class="ms-3">Technologies</span></a>
+                            <!-- Lien Profil -->
+                            <a class="nav-link liste position-relative me-4" href="#profil">/ /<span class="ms-3">Profil</span></a>
+                            <!-- Lien Contact -->
+                            <a class="nav-link liste position-relative me-4" href="#contact">/ /<span class="ms-3">Contact</span></a>
+                        </div> 
                     </div>
+
+                    <!-- Logo linkedin + github -->
+                    <a href="www.linkedin.com/in/alexis-vandevyvere" target="_blank">
+                        <i class="fa-brands fa-linkedin text-light me-3 fs-5"></i><br>
+                    </a>
+                    <a href="https://github.com/VandevyvereAlexis" target="_blank">
+                        <i class="fa-brands fa-github text-light me-4 fs-5"></i>
+                    </a>
 
                 </div>
             </nav> 
 
-            <div class="container" id="home-title">
-                <div class="row ">
-                    <div class="col-md-12 home-title">
-                        <h1>Bonjour, je suis Alexis</h1>
+            <!-- Bloc présentation-->
+            <div class="container" id="bloc-presentation">
+                <div class="row">
+                    <div class="col mt-4">
+                        <!-- Titres -->
+                        <h1 class="mt-5 pt-5 text-light">Bonjour, je suis Alexis</h1>
                         <h2>Développeur Web</h2>
-                        <a href="./cv/cv.pdf" class="btn btn-full" target="_blank">Télécharger mon cv</a><br>
-                        <a href="#contact" class="btn btn-full collab">Collaborons</a><br>
-                    </div>
-                    <div class="col-md-12 logo">
-                        <a href="www.linkedin.com/in/alexis-vandevyvere" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i><br>
-                        </a>
-                        <a href="https://github.com/VandevyvereAlexis" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
+                        <!-- Button -->
+                        <a href="#contact" class="btn btn-full collab text-light">Collaborons</a><br>
+                        <a href="./cv/cv.pdf" class="btn btn-full text-light mt-3" target="_blank">Télécharger mon cv</a><br>
                     </div>
                 </div>
             </div>
 
         </header>
+
 
 
         <!-- Main 

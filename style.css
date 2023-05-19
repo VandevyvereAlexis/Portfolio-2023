@@ -1,15 +1,12 @@
-/* Reset
+/* Body
 ======================================*/
-*, ::before, ::after {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(#37393f, #1a1616);
 }
+
 
 
 /* Global
@@ -19,22 +16,39 @@ section {
 }
 
 
+
 /* Header
 ======================================*/
 header {
-    background-image: url(./images/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg);
+    background-image: url(./images/milad-fakurian-DjjaZybYx4I-unsplash.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover; 
     background-attachment: fixed;
-    box-shadow: 1px 1px 1px white;
+    box-shadow: 1px 2px 7px #ffffff;
 }
 
-.home-title {
+
+
+/* Bloc présentation
+======================================*/
+/* H2 */
+#bloc-presentation h2 {
+    padding-bottom: 27rem;
+    color: rgb(223, 148, 254);
+    text-shadow: 1px 1px 2px #feffff;
+}
+
+/* Button */
+#bloc-presentation a {
+    border: 1px solid white;
+}
+
+/*.home-title {
     position: relative;
     top: 250px;
     animation: apparition 0.7s ease-in-out;
-}
+}*/
 
 .home-title h1 {
     color: azure;
@@ -92,6 +106,8 @@ header {
     transition: 0.5s;
 }
 
+
+
 /* Navbar
 ======================================*/
 #navbar {                          
@@ -100,75 +116,59 @@ header {
 
 /* Navbar */
 #navbar img {                   
-    width: 65px;
+    width: 55px;
     border-radius: 100px;
 }
 
 /* Logo cv */
-#logo-cv {                 
-    margin-left: 20px;
-    font-size: 18px;
-    color: rgb(140, 140, 247);
+#navbar #logo-cv {                 
+    font-size: 11px;
     transition: 0.5s;
 }
 
-/* logo cv span */
-#logo-cv span {             
+/* Texte cv span */
+#navbar #logo-cv span {             
     position: relative;
-    font-family: 'Prompt', sans-serif;
-    top: 8px;
-    right: 17px;
+    font-family: 'Montserrat', sans-serif;
+    top: 9px;
+    right: 13px;
     font-size: 10px;
-    font-weight: 600;
-}
-
-/* Logo cv hover */
-#logo-cv:hover {            
-    transform: scale(1.2);
-    transition: 0.5s;
-    color: azure;
+    font-weight: 400;
 }
 
 /* Liens navbar */
-#navbarNavAltMarkup {                      
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 16px;
-        gap: 50px;
+#navbar #liens-navbar a {
+    color: #feffff;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 3px#1a1616;
 }
 
-
-.navbar-nav {                           /* liste */
-
-    border-radius: 20px;
-    transition: 0.3s;
+/* Lien réalisations */
+#navbar #lien-realisations {                        
+    font-weight: 600 !important;
+    color: rgb(223, 148, 254) !important;
 }
 
-.navbar-nav a {                         /* liste */
-    transition: 0.5s;
-    border: 1px solid rgba(240, 255, 255, 0.616);
-    border-radius: 50px;
-    padding: 0 20px;
+/* Liens before */
+#navbar #liens-navbar span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1.5px;
+    background-color: rgb(223, 148, 254);
+    transition: all 0.4s ease-out;
 }
 
-.liste {                                /* liste */
-    color: azure;
+/* Liens hover before */
+#navbar #liens-navbar span:hover::before {
+    width: 100%;
 }
 
-.realisations {                         /* liste */
-    font-weight: 600;
-    color: rgb(137, 137, 252);
-}
-
-.navbar-nav a:hover {                   /* liste:hover */
-    color: azure;
-    transform: scale(1.1);
-    transition: 0.3s;
-    font-weight: 500;
-}
-
-.show {                                 /* liste déroulante */
-    text-align: center;
+/* Menu derouant */
+.show {                                 
     backdrop-filter: blur(7px);
     font-weight: 600;
     padding-bottom: 20px;
@@ -176,14 +176,23 @@ header {
     border-radius: 20px;
 }
 
-.navbar-toggler {
-    border: 1px solid azure;
+/* Liens deroulant */
+.show a {
+    padding-left: 10px;
 }
 
+/* Bordure ext menu burger */
+.navbar-toggler {
+    border: 0.5px solid azure;
+}
+
+/* Bordure int menu burger */
 .navbar-toggler-icon {
-    border: 1px solid azure;
+    border: 0.5px solid azure;
     border-radius: 10px;
 }
+
+
 
 
 /* Realisations
