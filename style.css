@@ -9,39 +9,16 @@ body {
 
 
 
-/* Global
-======================================*/
-section {
-    padding: 30px 0 60px 0;
-}
-
-
-
 /* Header
 ======================================*/
 header {
-    background-image: url(./images/milad-fakurian-DjjaZybYx4I-unsplash.jpg);
+    background-image: url(./images/image-fond.jpg);
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover; 
     background-attachment: fixed;
-    box-shadow: 1px 2px 7px #ffffff;
-}
-
-
-
-/* Bloc présentation
-======================================*/
-/* H2 */
-#bloc-presentation h2 {
-    padding-bottom: 27rem;
-    color: rgb(223, 148, 254);
-    text-shadow: 1px 1px 2px #feffff;
-}
-
-/* Button */
-#bloc-presentation a {
-    border: 1px solid white;
+    box-shadow: 1px 2px 7px rgb(223, 148, 254);
 }
 
 
@@ -66,7 +43,6 @@ header {
 
 /* Texte cv span */
 #navbar #logo-cv span {             
-    position: relative;
     font-family: 'Montserrat', sans-serif;
     top: 9px;
     right: 13px;
@@ -120,221 +96,227 @@ header {
 }
 
 /* Bordure ext menu burger */
-.navbar-toggler {
+#navbar #menu-burger {
     border: 0.5px solid azure;
 }
 
 /* Bordure int menu burger */
-.navbar-toggler-icon {
+#navbar .navbar-toggler-icon {
     border: 0.5px solid azure;
     border-radius: 10px;
 }
 
+
+
+/* Bloc présentation
+======================================*/
+/* H1 */
+#bloc-presentation h1 {
+    letter-spacing: 1px;
+}
+
+/* H2 */
+#bloc-presentation h2 {
+    padding-bottom: 15rem;
+    color: rgb(223, 148, 254);
+    text-shadow: 1px 1px 2px #feffff;
+    letter-spacing: 1px;
+}
+
+/* Button */
+#bloc-presentation .p-3 {
+    border: 0.8px solid  #feffff;
+    border-radius: 10px;
+    color: rgb(223, 148, 254);
+    transition: 0.3s;
+}
+
+/* Button hover */
+#bloc-presentation .p-3:hover {
+    background-color: rgba(240, 255, 255, 0.774);
+    color: #000000;
+    transition: 0.3s;
+}
+
+/* Button linkedin */
+#bloc-presentation #logo-link {
+    transition: 0.3s;
+}
+
+/* Button github */
+#bloc-presentation #logo-git {
+    transition: 0.3s;
+}
+
+/* Button linkedin hover*/
+#bloc-presentation #logo-link:hover {
+    color:  rgb(223, 148, 254) !important;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Button github hover */
+#bloc-presentation #logo-git:hover {
+    color:  rgb(223, 148, 254) !important;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 
 
 /* Realisations
 ======================================*/
-.realisations img {
-    width: 100%;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem rgb(215, 213, 213));
-    border: 1px solid rgb(140, 140, 247);
-    transition: 0.5s;
-    margin-top: 10px;
+/* Titre section réalisations */
+#realisations h2 {
     animation: apparition 0.7s ease-in-out;
 }
 
-.realisations img:hover {
+/* Titre section réalisations hover */
+#realisations h2::after {
+    display: block;
+    height: 1px;
+    background-color: rgb(223, 148, 254);
+    width: 100px;
+    content: "";
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+/* Images */
+#realisations img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 148, 254);
+    transition: 0.5s;
+    animation: apparition 0.7s ease-in-out;
+}
+
+/* Images hover */
+#realisations img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    filter: grayscale(100%);
 }
 
-.realisation h2 {
-    text-align: center;
-    margin: 40px 30px;
-    color: azure;
-}
-
-.realisation h2::after {
-    display: block;
-    height: 2px;
-    background-color: rgb(137, 137, 252);
-    width: 100px;
-    content: "";
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-
-/* Compétences
-======================================*/
-#competences h2 {
-    text-align: center;
-    margin: 40px 30px;
-    color: azure;
-    animation: apparition 0.7s ease-in-out;
-}
-
-#competences h2:after {
-    display: block;
-    height: 2px;
-    background-color: rgb(137, 137, 252);
-    width: 100px;
-    content: "";
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-#competences .g-lg-3 {
-    border-radius: 30px;
-    box-shadow: 1px 1px 1px azure;
-    margin-top: 20px;
-    animation: apparition 0.7s ease-in-out;
-}
-
-.competence img {
-    width: 100px;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    animation: apparition 0.7s ease-in-out;
-}
-
-.competence p {
-    color: azure;
-    padding-top: 10px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    animation: apparition 0.7s ease-in-out;
-}
 
 
 /* Technologies
 ======================================*/
+/* Titre section technologies */
 #technologies h2 {
-    margin: 40px 30px;
-    color: azure;
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Titre section technologies hover */
 #technologies h2:after {
     display: block;
-    height: 2px;
-    background-color: rgb(137, 137, 252);
+    height: 1px;
+    background-color: rgb(223, 148, 254);
     width: 100px;
     content: "";
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 5px;
 }
+
 
 #technologies i {
     font-size: 30px;
-    color: azure;
     animation: apparition 0.7s ease-in-out;
 }
 
 #technologies p {
-    color: rgb(137, 137, 252);
+    color:  rgb(223, 148, 254);
     font-size: 10px;
     animation: apparition 0.7s ease-in-out;
 }
 
-#technologies .tech {
-    padding-bottom: 30px;
-}
 
 
 /* Profil
 ======================================*/
+/* Titre section profil */
 #profil h2 {
-    text-align: center;
-    margin: 40px 30px;
-    color: azure;
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Titre section profil after */
 #profil h2:after {
     display: block;
-    height: 2px;
-    background-color: rgb(137, 137, 252);
+    height: 1px;
+    background-color: rgb(223, 148, 254);
     width: 100px;
     content: "";
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 5px;
 }
 
+/* Paragraphe */
 #profil p {
-    color: azure;
     letter-spacing: 2px;
     box-shadow: 1px 1px 1px azure;
-    padding: 30px 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: 0.5s;
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Paragraphe hover */
 #profil p:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
+/* memoji */
 #profil img {
     width: 200px;
-    padding-bottom: 20px;
     animation: apparition 0.7s ease-in-out;
 }
+
 
 
 /* Contact
 ======================================*/
+/* Titre section profil */
 #contact h2 {
-    text-align: center;
-    margin: 40px 30px;
-    color: azure;
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Titre section profil hover*/
 #contact h2:after {
     display: block;
-    height: 2px;
-    background-color: rgb(137, 137, 252);
+    height: 1px;
+    background-color: rgb(223, 148, 254);
     width: 100px;
     content: "";
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 5px;
 }
 
+/* Icones */
 #contact i {
-    color: azure;
+    color:  rgb(223, 148, 254);
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Textes */
 #contact p {
-    color: azure;
-    transition: 0.5s;
     animation: apparition 0.7s ease-in-out;
 }
 
-#contact p:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 1px solid azure;
-}
 
 
 /* Footer
 ======================================*/
+/* Droit */
 #droit h2 {
-    color: azure;
     font-size: 10px;
     font-weight: 100;
     animation: apparition 0.7s ease-in-out;
 }
+
 
 
 /* Keyframe 
@@ -351,24 +333,61 @@ header {
 }
 
 
+
 /* Media queries 
 ======================================*/
 @media screen and ( min-width: 280px ) and ( max-width: 991px ) {
-    .fa-cloud-arrow-down {
+
+    /* Header
+    ================= */
+
+    /* Bloc présentation */
+    #bloc-presentation {
+        text-align: center;
+    }
+
+    /* col présentation */
+    #bloc-presentation #col-presentation {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* H1 */
+    #bloc-presentation h1 {
+        padding-top: 150px !important;
+    }
+
+    /* H2 */
+    #bloc-presentation h2 {
+        padding-bottom: 25px;
+    }
+
+    /* Button */
+    #bloc-presentation .p-3 {
+        color: azure;
+        border-color: rgb(223, 148, 254);
+    }
+
+    /* Logos linkedin + github */
+    #bloc-presentation #logos-link-git{
+        justify-content: center;
+        font-size: 40px !important;
+    }
+
+    /* logo linkedin */
+    #bloc-presentation #logo-link {
+        margin: 0 !important;
+        font-size: 40px !important;
+    }
+
+    /* logo github */
+    #bloc-presentation #logo-git {
+        font-size: 40px !important;
+    }
+
+    /* logo cv */
+    #navbar #logo-cv {
         visibility: hidden;
-    }
-    .home-title {
-        text-align: center;
-    }
-    .logo {
-        text-align: center;
     }
 }
 
-@media screen and ( max-width: 290px ) {
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}

@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
+    <!-- Head 
+    ======================================-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Titre -->
         <title>Portfolio</title>
 
         <!-- Fontawesome -->
@@ -20,6 +25,8 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
+
+
 
     <body>
 
@@ -37,7 +44,7 @@
                     </a>
 
                     <!-- Menu burger -->
-                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="menu-burger">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -46,12 +53,10 @@
                         <div class="navbar-nav" id="liens-navbar">
                             <!-- Logo -->
                             <a href="./cv/cv.pdf">
-                                <i class="fa-solid fa-cloud-arrow-down position-relative me-3 text-light" id="logo-cv"><span>cv</span></i>
+                                <i class="fa-solid fa-cloud-arrow-down position-relative me-3 text-light" id="logo-cv"><span class="position-relative">cv</span></i>
                             </a>
                             <!-- Lien réalisations -->
                             <a class="nav-link lsite position-relative me-4" href="#realisations" id="lien-realisations"> <span></span>/ /<span class="ms-3">Réalisations</span></a>
-                            <!-- Lien compétences -->
-                            <a class="nav-link liste position-relative me-4" href="#competences">/ /<span class="ms-3">Compétences</span></a>
                             <!-- Lien Technologies -->
                             <a class="nav-link liste position-relative me-4" href="#technologies">/ /<span class="ms-3">Technologies</span></a>
                             <!-- Lien Profil -->
@@ -61,27 +66,30 @@
                         </div> 
                     </div>
 
-                    <!-- Logo linkedin + github -->
-                    <a href="www.linkedin.com/in/alexis-vandevyvere" target="_blank">
-                        <i class="fa-brands fa-linkedin text-light me-3 fs-5"></i><br>
-                    </a>
-                    <a href="https://github.com/VandevyvereAlexis" target="_blank">
-                        <i class="fa-brands fa-github text-light me-4 fs-5"></i>
-                    </a>
-
                 </div>
             </nav> 
 
             <!-- Bloc présentation-->
-            <div class="container" id="bloc-presentation">
+            <div class="container-fluid" id="bloc-presentation">
                 <div class="row">
-                    <div class="col mt-4">
+                    <div class="col mt-4 ms-4" id="col-presentation">
                         <!-- Titres -->
                         <h1 class="mt-5 pt-5 text-light">Bonjour, je suis Alexis</h1>
                         <h2>Développeur Web</h2>
-                        <!-- Button -->
-                        <a href="#contact" class="btn btn-full collab text-light">Collaborons</a><br>
-                        <a href="./cv/cv.pdf" class="btn btn-full text-light mt-3" target="_blank">Télécharger mon cv</a><br>
+                        <!-- Button 1 -->
+                        <a href="#contact" class="btn btn-full collab p-3">Collaborons</a><br>
+                        <!-- Button 2 -->
+                        <a href="./cv/cv.pdf" class="btn btn-full mt-4 p-3" target="_blank">Télécharger mon cv</a><br>
+                        <div class="d-flex mt-4" id="logos-link-git">
+                            <!-- Logo linkedin -->
+                            <a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank">
+                                <i class="fa-brands fa-linkedin text-light fs-1 ms-5" id="logo-link"></i><br>
+                            </a>
+                            <!-- Logo github -->
+                            <a href="https://github.com/VandevyvereAlexis" target="_blank">
+                                <i class="fa-brands fa-github text-light fs-1 ms-4" id="logo-git"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,46 +102,53 @@
         ======================================-->
         <main>
 
-            <!-- Realisations 
+            <!-- Section réalisations 
             ======================================-->
             <section id="realisations">
                 <div class="container">
                     <div class="row"> 
 
-                        <div class="col-md-12 realisation">
-                            <h2>Mes réalisations</h2>
+                        <!-- Titre section réalisation -->
+                        <div class="col-md-12">
+                            <h2 class="mt-5 pt-3 pb-3 text-light">Mes réalisations</h2>
                         </div>
-                        <div class="col-md-4 realisations">
+                        <!-- Image 1 Navbar -->
+                        <div class="col-md-4">
                             <a href="https://vandevyverealexis.github.io/Navbar/">
                                 <img src="./images/navbar.png" alt="Navbar">
                             </a>
                         </div>
-                        <div class="col-md-4 realisations">
+                        <!-- Image 2 carte de visite -->
+                        <div class="col-md-4 mt-2">
                             <a href="https://vandevyverealexis.github.io/Carte-de-visite-/">
-                                <img src="./images/carte-de-visite.png" alt="Carte de visite">
+                                <img src="./images/carte-visite.png" alt="Carte de visite">
                             </a>
                         </div>
-                        <div class="col-md-4 realisations">
-                            <a href="https://vandevyverealexis.github.io/Portfolio/">
+                        <!-- Image 3 portfolio flexbox -->
+                        <div class="col-md-4 mt-2">
+                            <a href="https://vandevyverealexis.github.io/Portfolio-flexbox/">
                                 <img src="./images/portfolio-flexbox.png" alt="Portfolio flexbox">
                             </a>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-4 realisations">
+                    <div class="row mt-2">
+                        <!-- Image 4 kome-waza -->
+                        <div class="col-md-4 mt-2">
                             <a href="https://vandevyverealexis.github.io/Kome-waza/">
                                 <img src="./images/kome-waza.png" alt="Kome waza">
                             </a>
                         </div>
-                        <div class="col-md-4 realisations">
+                        <!-- Image 5 site du thé -->
+                        <div class="col-md-4 mt-2">
                             <a href="https://vandevyverealexis.github.io/Site-du-the/">
-                                <img src="./images/site-du-the.png" alt="Site du the">
+                                <img src="./images/art-du-the.png" alt="Site du the">
                             </a>
                         </div>
-                        <div class="col-md-4 realisations">
-                            <a href="https://vandevyverealexis.github.io/Portfolio-Boostrap-2023/">
-                                <img src="./images/portfolio-bootstrap.png" alt="Portfolio Bootstrap">
+                        <!-- Image 6 Drivemyride -->
+                        <div class="col-md-4 mt-2">
+                            <a href="https://vandevyverealexis.github.io/Drivemyride/">
+                                <img src="./images/drivemyride.png" alt="Drivemyride">
                             </a>
                         </div>
                     </div>
@@ -142,77 +157,61 @@
             </section>
 
 
-            <!-- Compétences 
-            ======================================-->
-            <section id="competences">
-                <div class="container text-center">
-                    <h2 class="mx-auto">Mes compétences</h2>
-                    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
 
-                        <div class="col-md-3 competence">
-                            <img src="./images/autonomie.png" alt="Autonomie">
-                            <p>Autonomie</p>
-                        </div>
-                        <div class="col-md-3 competence">
-                            <img src="./images/developpeur-web.png" alt="Développeur web & web mobile">
-                            <p>Développeur web & web mobile</p>
-                        </div>
-                        <div class="col-md-3 competence">
-                            <img src="./images/travail-equipe.png" alt="Travail en équipe">
-                            <p>Travail en équipe</p>
-                        </div>
-                        <div class="col-md-3 competence">
-                            <img src="./images/besoins-clients.png" alt="Définission besoin client">
-                            <p>Définission besoin client</p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Technologies 
+            <!-- Section technologies 
             ======================================-->
             <section id="technologies">
-                <div class="container-fluid text-center">
-                    <h2 class="mx-auto">Technologies</h2>
+                <div class="container">
+
+                    <!-- Titre section technologies -->
+                    <div class="col-md-12">
+                        <h2 class="mt-5 pt-3 pb-3 text-light">Technologies</h2>
+                    </div>
+                    
+                    <!-- Front-end -->
                     <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
-
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-html5"></i>
+                        <!-- Logo html5 -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-html5 pb-4 text-light"></i>
                         </div>
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-css3-alt"></i>
+                        <!-- Logo css3 -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-css3-alt text-light"></i>
                         </div>
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-bootstrap"></i>
+                        <!-- Logo bootstrap -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-bootstrap text-light"></i>
                         </div>
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-js"></i>
+                        <!-- Logo js -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-js text-light"></i>
                             <p>En cours</p>
                         </div>
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-vuejs"></i>
+                        <!-- Logo vuejs -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-vuejs text-light"></i>
                             <p>En cours</p>
                         </div>
-                        <div class="col-md-2">
-                            <i class="fa-brands fa-wordpress"></i>
-                            <p>En cours</p>
+                        <!-- Logo wordpress -->
+                        <div class="col-md-2 text-center">
+                            <i class="fa-brands fa-wordpress text-light"></i>
                         </div>
-
                     </div>
 
+                    <!-- back-end -->
                     <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-                        <div class="col-md-4">
-                            <i class="fa-brands fa-php"></i>
+                        <!-- Logo php -->
+                        <div class="col-md-4 text-center pt-2">
+                            <i class="fa-brands fa-php text-light"></i>
+                        </div>
+                        <!-- Logo laravel -->
+                        <div class="col-md-4 text-center">
+                            <i class="fa-brands fa-laravel text-light"></i>
                             <p>En cours</p>
                         </div>
-                        <div class="col-md-4">
-                            <i class="fa-brands fa-laravel"></i>
-                            <p>En cours</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa-brands fa-java"></i>
+                        <!-- Logo java -->
+                        <div class="col-md-4 text-center pb-1">
+                            <i class="fa-brands fa-java text-light"></i>
                             <p>En cours</p>
                         </div>
                     </div>
@@ -221,15 +220,20 @@
             </section>
 
 
-            <!-- profil 
+            <!-- Section profil 
             ======================================-->
             <section id="profil">
-                <div class="container text-center">
-                    <h2 class="mx-auto">Qui suis-je ?</h2>
-                    <div class="row d-flex flex-wrap-reverse align-items-center">
+                <div class="container">
 
+                    <!-- Titre section profil -->
+                    <div class="col-md-12">
+                        <h2 class="mt-5 pt-3 pb-3 text-light">Qui suis-je ?</h2>
+                    </div>
+
+                    <div class="row d-flex flex-wrap-reverse align-items-center">
+                        <!-- Paragraphe -->
                         <div class="col-md-6">
-                            <p>Bonjour, je suis Alexis. <br><br>
+                            <p class="p-4 text-light">Bonjour, je suis Alexis. <br><br>
                                 Je me suis toujours intéressé au domaine technologique.
                                 Après 6 ans dans le milieu de l'automobile, mon envie de me
                                 développer et de découvrir d'autres choses mon amené à
@@ -238,7 +242,8 @@
                                 Arinfo pour une durée de 6 mois.</p>
                         </div>
 
-                        <div class="col-md-6">
+                        <!-- Memoji -->
+                        <div class="col-md-6 text-center">
                             <img src="./images/memoji.png" alt="Alexis">
                         </div>
 
@@ -250,21 +255,28 @@
             <!-- Contact
             ======================================-->
             <section id="contact">
-                <div class="container text-center">
-                    <h2 class="mx-auto">Me contacter</h2>
-                    <div class="row">
+                <div class="container">
 
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-mobile"></i>
-                            <p>07.51.99.25.07</p>
+                    <!-- Titre section profil -->
+                    <div class="col-md-12">
+                        <h2 class="mt-5 pt-3 pb-3 text-light">Me contacter</h2>
+                    </div>
+
+                    <div class="row pt-4">
+                        <!-- Telephone -->
+                        <div class="col-md-4 text-center">
+                            <i class="fa-solid fa-mobile pb-3"></i>
+                            <p class="text-light pb-4">07.51.99.25.07</p>
                         </div>
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-map-pin"></i>
-                            <p>Niort</p>
+                        <!-- Localisation -->
+                        <div class="col-md-4 text-center">
+                            <i class="fa-solid fa-map-pin pb-3"></i>
+                            <p class="text-light pb-4">Niort 79000</p>
                         </div>
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-at"></i>
-                            <p>vandevyvere.alexis.pro@gmail.com</p>
+                        <!-- Mail -->
+                        <div class="col-md-4 text-center">
+                            <i class="fa-solid fa-at pb-3"></i>
+                            <p class="text-light">vandevyvere.alexis.pro@gmail.com</p>
                         </div>
 
                     </div>
@@ -273,13 +285,16 @@
 
         </main>
 
+
+
         <!-- footer
         ======================================-->
         <footer id="droit">
             <div class="container-fluid text-center">
-                <h2>Alexis Vdv © 2023</h2>
+                <h2 class="pt-5 text-light">Alexis Vdv © 2023</h2>
             </div>
         </footer>
+
 
 
         <!-- Bundle JavaScript Bootstrap
