@@ -220,12 +220,13 @@ header {
     margin-left: 5px;
 }
 
-
+/* Icones */
 #technologies i {
     font-size: 30px;
     animation: apparition 0.7s ease-in-out;
 }
 
+/* Textes */
 #technologies p {
     color:  rgb(223, 148, 254);
     font-size: 10px;
